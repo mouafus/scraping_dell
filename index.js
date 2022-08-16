@@ -11,11 +11,11 @@ const download = (uri, filename, callback) => {
 
 
 async function scrape() {
-    loader.Loader.startDotLine(1000, "Sois patient mon frère ");
+    loader.Loader.startDotLine(1000, "Loading");
     const browser = await puppeteer.launch({})
     const page = await browser.newPage();
 
-    const URI = "https://www.dell.com/en-uk/shop/laptop-computers-2-in-1-pcs/latitude-9330-2-in-1-laptop/spd/latitude-13-9330-laptop/gctol933013emea_2in1_vp?redirectTo=SOC"
+    const URI = "https://www.dell.com/en-uk/shop/laptop-computers-2-in-1-pcs/latitude-3520-laptop/spd/latitude-15-3520-laptop/gctol352015emea_ref?redirectTo=SOC"
     await page.goto(
         URI,
         {waitUntil: 'domcontentloaded'}
